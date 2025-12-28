@@ -1,0 +1,202 @@
+/* MAIN SECTION */
+.book-section {
+  padding: 80px 40px;
+  background: #f5f7ff;
+  text-align: center;
+}
+
+.book-section h2 {
+  font-size: 36px;
+  color: #3A86FF;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.book-section p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* FORM BOX */
+.book-form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: white;
+  padding: 35px;
+  box-shadow: 0px 5px 22px rgba(0,0,0,0.12);
+  border-radius: 20px;
+}
+
+.book-form input,
+.book-form textarea {
+  padding: 14px 18px;
+  border: 2px solid #3A86FF;
+  border-radius: 14px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.book-form input:focus,
+.book-form textarea:focus {
+  border-color: #8338EC;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  margin-top: 8px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: #8338EC;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #3A86FF;
+  transform: scale(1.05);
+}
+
+/* CONTACT BOX */
+.contact-box {
+  margin-top: 40px;
+  padding: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+}
+
+.contact-box h3 {
+  color: #8338EC;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.contact-box p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #444;
+}
+
+/* BUTTONS (VIEW PACKAGES & BOOK YOUR PACKAGE) */
+.packages-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #3A86FF;
+  color: white;
+  border-radius: 28px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.packages-btn:hover {
+  background: #8338EC;
+  transform: scale(1.05);
+}
+
+/* SUCCESS POPUP OVERLAY */
+.popup-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* POPUP CARD */
+.popup {
+  background: white;
+  padding: 30px 35px;
+  border-radius: 16px;
+  text-align: center;
+  width: 330px;
+  animation: popupShow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.popup h3 {
+  color: #27ae60;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  font-size: 16px;
+  color: #444;
+}
+
+.popup button {
+  margin-top: 18px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.25s ease;
+}
+
+.popup button:hover {
+  background: #1e874b;
+  transform: scale(1.05);
+}
+
+/* POPUP ANIMATION */
+@keyframes popupShow {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .book-section {
+    padding: 60px 20px;
+  }
+
+  .book-form {
+    padding: 25px;
+  }
+
+  .book-section h2 {
+    font-size: 28px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+  }
+
+  .packages-btn {
+    font-size: 15px;
+    padding: 10px 22px;
+  }
+
+  .popup {
+    width: 280px;
+    padding: 25px;
+  }
+}

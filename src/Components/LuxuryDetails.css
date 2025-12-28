@@ -1,0 +1,144 @@
+/* ---------------------------------------------
+   MAIN WRAPPER
+---------------------------------------------- */
+.luxury-details-container {
+  padding: 40px 6%;
+  text-align: center;
+}
+
+/* ---------------------------------------------
+   TITLE
+---------------------------------------------- */
+.luxury-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #6a0dad; /* purple */
+}
+
+/* ---------------------------------------------
+   IMAGE STYLE
+---------------------------------------------- */
+.luxury-img {
+  width: 65%;
+  height: 420px;          /* ← Increase height here */
+  object-fit: cover;      /* ← Keeps image clean without stretching */
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.luxury-img:hover {
+  transform: scale(1.02);
+}
+
+/* ---------------------------------------------
+   BADGES
+---------------------------------------------- */
+.luxury-badges {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.luxury-badge {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.green-badge {
+  background: #28a745;
+}
+
+.gold-badge {
+  background: #ffc107;
+  color: black;
+}
+
+/* ---------------------------------------------
+   INFO SECTION
+---------------------------------------------- */
+.luxury-info {
+  margin-top: 40px;
+  text-align: left;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.luxury-info h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #6a0dad;
+}
+
+.luxury-info p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------
+   BACK BUTTON
+---------------------------------------------- */
+.luxury-back-btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: #0d6efd;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.luxury-back-btn:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------
+   BOOK BUTTON
+---------------------------------------------- */
+.book-btn {
+  margin-top: 30px;
+  padding: 16px;
+  width: 100%;
+  background: #6a0dad;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.book-btn:hover {
+  background: #8b1dd0;
+}
+
+/* ---------------------------------------------
+   RESPONSIVE
+---------------------------------------------- */
+@media (max-width: 768px) {
+  .luxury-img {
+    width: 100%;
+  }
+
+  .luxury-info {
+    width: 100%;
+  }
+
+  .luxury-title {
+    font-size: 30px;
+  }
+
+  .book-btn {
+    font-size: 18px;
+  }
+}

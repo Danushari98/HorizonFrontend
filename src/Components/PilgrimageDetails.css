@@ -1,0 +1,265 @@
+/* ---------------------------------------------
+   MAIN WRAPPER
+---------------------------------------------- */
+.pilgrimage-section {
+  padding: 50px 6%;
+  background: #f4f7ff;
+  text-align: center;
+}
+
+/* ---------------------------------------------
+   TITLE
+---------------------------------------------- */
+.pilgrimage-title {
+  font-size: 32px;
+  color: #6a0dad; /* purple */
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------------------
+   GRID LAYOUT
+---------------------------------------------- */
+.pilgrimage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ---------------------------------------------
+   CARD STYLES
+---------------------------------------------- */
+.pilgrimage-card {
+  background: white;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  position: relative;
+}
+
+.pilgrimage-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------------------------------------------
+   IMAGE
+---------------------------------------------- */
+.pilgrimage-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.pilgrimage-img:hover {
+  transform: scale(1.03);
+}
+
+/* ---------------------------------------------
+   NAME & PRICE
+---------------------------------------------- */
+.pilgrimage-name {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pilgrimage-price {
+  color: #28a745;
+  margin: 5px 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------
+   DAYS & LOCATION
+---------------------------------------------- */
+.pilgrimage-info {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* ---------------------------------------------
+   BOOK BUTTON
+---------------------------------------------- */
+.pilgrimage-book-btn {
+  background: #6a0dad;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.pilgrimage-book-btn:hover {
+  background: #8338ec;
+}
+
+/* ---------------------------------------------
+   LOAD MORE BUTTON
+---------------------------------------------- */
+.pilgrimage-load-more {
+  margin-top: 30px;
+  background: #4b2ae8;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.pilgrimage-load-more:hover {
+  background: #351bc7;
+}
+
+/* ---------------------------------------------
+   DETAILS PAGE
+---------------------------------------------- */
+.details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 6%;
+  margin-top: 40px;
+  background: #f4f7ff;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.details-img-fixed {
+  width: 100%;
+  height: 450px;       /* FIXED HEIGHT */
+  object-fit: cover;   /* prevents distortion */
+  border-radius: 20px;
+}
+.details-img:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.details-content {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.details-content h1 {
+  font-size: 32px;
+  color: #8338ec;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.location {
+  font-size: 18px;
+  color: #3a86ff;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 22px;
+  color: #3a86ff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------
+   BUTTONS
+---------------------------------------------- */
+.book-btn,
+.back-btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 12px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.back-btn {
+  background: #ccc;
+  color: #333;
+}
+
+.back-btn:hover {
+  background: #3a86ff;
+  color: white;
+}
+
+.book-btn {
+  background: #3a86ff;
+  color: white;
+}
+
+.book-btn:hover {
+  background: #8338ec;
+}
+
+/* ---------------------------------------------
+   RESPONSIVE DESIGN
+---------------------------------------------- */
+@media (max-width: 1024px) {
+  .details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-img,
+  .details-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pilgrimage-img {
+    width: 100%;
+  }
+
+  .pilgrimage-info {
+    width: 100%;
+  }
+
+  .pilgrimage-title {
+    font-size: 28px;
+  }
+
+  .pilgrimage-book-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-content h1 {
+    font-size: 26px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .book-btn,
+  .back-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}

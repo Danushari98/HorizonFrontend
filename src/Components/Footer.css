@@ -1,0 +1,55 @@
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  line-height: 1.6;
+}
+
+/* Quick Links List */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  line-height: 28px;
+}
+
+.footer-list li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-list li:hover {
+  color: #C9A227; /* Royal Gold */
+}
+
+/* Bottom Copyright */
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

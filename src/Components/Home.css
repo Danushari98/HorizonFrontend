@@ -1,0 +1,141 @@
+/* ---------------------------------------------------
+   GLOBAL PAGE STYLES
+----------------------------------------------------- */
+.home-page {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------------------------------
+   HERO SECTION (Red Fort Background)
+----------------------------------------------------- */
+.hero-section {
+  position: relative;
+  height: 95vh;
+  background: url("../assets/redfort.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* Explore Button */
+.explore-btn {
+  margin-top: 25px;
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #3a86ff;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #8338ec;
+}
+
+/* ---------------------------------------------------
+   ABOUT SECTION
+----------------------------------------------------- */
+.about-section {
+  padding: 60px 10%;
+  background: #f7f9fc;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #3a86ff;
+}
+
+.about-section p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ---------------------------------------------------
+   SECTIONS (Destinations, Packages, Festivals, etc.)
+----------------------------------------------------- */
+#destinations,
+#packages,
+#festivals,
+#pilgrimage,
+#luxury,
+#book {
+  padding: 70px 5%;
+}
+
+#destinations h2,
+#packages h2,
+#festivals h2,
+#pilgrimage h2,
+#luxury h2,
+#book h2 {
+  text-align: center;
+  color: #8338ec;
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 900px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .explore-btn {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    height: 80vh;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+}
