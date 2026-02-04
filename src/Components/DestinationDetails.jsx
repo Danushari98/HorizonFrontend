@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import destinationsData from "./destinationsData.js";
-import "./destinationDetails.css";
+import "./DestinationDetails.css";
 
 export default function DestinationDetails() {
   const { id } = useParams();
