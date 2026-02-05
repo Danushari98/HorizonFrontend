@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://travel-backend-xurz.onrender.com/api/",
+  baseURL: import.meta.env.VITE_API_URL || "https://travel-backend-xurz.onrender.com/api",
   timeout: 15000,
   headers: {
     "Content-Type": "application/json",
